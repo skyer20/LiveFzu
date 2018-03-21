@@ -1,0 +1,11 @@
+image{
+  display: inline;
+}
+swiper{
+  height: 400rpx;
+}
+
+.selectIcon{
+  height: 200rpx;
+  width: 100%;
+}

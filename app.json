@@ -1,11 +1,35 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/release/release",
+    "pages/personal/personal"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6495ED",
+    "navigationBarTitleText": "Live福大",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath":"pages/index/index",
+        "text": "首页",
+        "iconPath": "img/TabBar/首页.png",
+        "selectedIconPath":"img/TabBar/index_selected.png"
+      },
+      {
+        "pagePath": "pages/release/release",
+        "text": "发布",
+        "iconPath": "img/TabBar/发布.png",
+        "selectedIconPath": "img/TabBar/release_selected.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "img/TabBar/我的.png",
+        "selectedIconPath": "img/TabBar/personal_selected.png"
+      }
+    ]
   }
 }

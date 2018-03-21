@@ -1,0 +1,12 @@
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" mode='scaleToFill'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="selectIcon">
+  <block wx:for="{{iconUrls}}">
+    <image src='{{item}}'></image>
+  </block>
+</view>
