@@ -1,0 +1,27 @@
+<view class='container'>
+  <view class='welcome'>
+    <text>欢迎注册Live福大</text>
+  </view>
+  <view class='loadReg'>
+    <view class='acountMes'>
+      <input type='text' placeholder='请输入账号' bindinput='getAccount'></input>
+    </view>
+    <view class='passwordMes'>
+      <input type='text' password='true' placeholder='请输入密码' bindinput='getPassword'></input>
+    </view>
+    <view class='telMes'>
+      <input type='text' placeholder='请输入手机号' bindinput='getTel'></input>
+    </view>
+    <view class='qqMes'>
+      <input type='text' placeholder='请输入qq号' bindinput='getQQ'></input>
+    </view>
+    <view class='LR'>
+      <view class='sure'>
+        <button bindtap='sure'>确定</button>
+      </view>
+      <view class='cancel'>
+        <button bindtap='cancel'>取消</button>
+      </view>
+    </view>
+  </view>
+</view>

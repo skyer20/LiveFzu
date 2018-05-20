@@ -1,8 +1,21 @@
 {
   "pages": [
+    "pages/course/course",
     "pages/index/index",
+    "pages/start/start",
+    "pages/weatherquery/weatherquery",
     "pages/release/release",
-    "pages/personal/personal"
+    "pages/register/register",
+    "pages/personal/personal",
+    "pages/bbs/bbs",
+    "pages/type/type",
+    "pages/weather/weather",
+    "pages/recentweather/recentweather",
+    "pages/mybbs/mybbs",
+    "pages/mycollection/mycollection",
+    "pages/search/search",
+    "pages/uploadcourse/uploadcourse",
+    "pages/uploadView/uploadView"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,10 +26,10 @@
   "tabBar": {
     "list": [
       {
-        "pagePath":"pages/index/index",
+        "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "img/TabBar/首页.png",
-        "selectedIconPath":"img/TabBar/index_selected.png"
+        "selectedIconPath": "img/TabBar/index_selected.png"
       },
       {
         "pagePath": "pages/release/release",

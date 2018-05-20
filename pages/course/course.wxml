@@ -1,0 +1,34 @@
+<view class="container">
+  <view class='courseTitle'>课件信息</view>
+  <view class='searchContainer'>
+    <view class='pickerContainer'>
+      <picker bindchange='bindPickerChange' value='{{index}}' range='{{searchArray}}'>
+        <view class='pickerItem'>
+          <text>{{searchArray[index]}}</text>
+          <image src='../../img/index/icon/xiala.png'></image>
+        </view>
+      </picker>
+    </view>
+    <view class='searchContent'>
+      <image src='../../img/index/icon/search.png'></image>
+      <input type='text' placeholder='请输入搜索内容' bindconfirm="searchConfirm"></input>
+    </view>
+  </view>
+  <view class='courseContent'>
+    <block wx:for="{{courseType}}" wx:key="">
+      <view class='courseItem' bindtap='detail' data-item='{{item}}'>
+        <view class='itemHead'>
+          <view class='headLeft'>学院：{{item.college}}</view>
+          <view class='headRigth'>专业：{{item.major}}</view>
+        </view>
+        <view class='itemCenter'>
+          <view class='course'>{{item.course}}</view>
+        </view>
+        <view class='itembottom'>
+          <view class='teacher'>任课老师：{{item.teather}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <button bindtap='uploadCourse' class='uploadButton'>我要上传课件</button>
+</view>

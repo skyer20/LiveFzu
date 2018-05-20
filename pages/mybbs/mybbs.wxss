@@ -1,0 +1,74 @@
+/* pages/mybbs/mybbs.wxss */
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.typeTitle{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #CCCCFF;
+}
+.tieziItem{
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-top: 8px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  border-bottom: solid 1px #F2f2f2;
+}
+.tieziTop{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: solid 1px #F2f2f2;
+}
+.UserTX image{
+  height: 35px;
+  width: 35px;
+}
+.UserName{
+  margin-left: 5px;
+}
+.imgContainer{
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.imgItem image{
+  height: 80px;
+  width: 80px;
+}
+
+.tieziBottom{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.displaytimeContainer text{
+  font-size: 10px;
+  color: #996699;
+}
+.details{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.detailsText{
+  margin-right: 5px;
+}
+.detailsText text{
+  color: #CCCCFF;
+  font-size: 16px;
+}

@@ -1,0 +1,37 @@
+<view class="container">
+  <view class='typeTitle'>
+    <text>{{typeTitle}}</text>
+  </view>
+  <block wx:for="{{bbs}}" wx:key="id">
+    <view class='tieziItem'>
+      <view class='tieziTop'>
+        <view class='UserTX'>
+          <image src='{{item.userTX}}'></image>
+        </view>
+        <view class='UserName'>
+          <text>{{item.userName}}</text>
+        </view>
+      </view>
+      <view class='textContainer'>
+        <text>{{item.textMes}}</text>
+      </view>
+      <view class='imgContainer'>
+        <block wx:for="{{item.imgMes}}" wx:key="key">
+          <view class='imgItem'>
+            <image src="{{item}}"></image>
+          </view>
+        </block>
+      </view>
+      <view class='tieziBottom'>
+        <view class='displaytimeContainer'>
+          <text>{{item.displayTime}}发布</text>
+        </view>
+        <view class='details'>
+          <view class='detailsText' bindtap='lookDetails' data-item='{{item}}'>
+            <text>查看详情>></text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

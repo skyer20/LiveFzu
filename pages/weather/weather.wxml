@@ -1,0 +1,30 @@
+<view class='container'>
+  <view class='topContainer'>
+    <view class='timePosition'>
+      <view class='position'>{{weatherData.currentWeather[0].currentCity}}</view>
+      <view class='time'>{{weatherData.currentWeather[0].date}}</view>
+    </view>
+    <view class='weather'>
+      <view class='temperature'>{{weatherData.currentWeather[0].temperature}}</view>
+      <view class='weatherDesc'>
+        <image src='{{weatherData.originalData.results[0].weather_data[0].dayPictureUrl}}'></image>
+        {{weatherData.currentWeather[0].weatherDesc}}
+      </view>
+      <view class='wind'>{{weatherData.currentWeather[0].wind}}</view>
+    </view>
+  </view>
+  <view class='adviceContainer'>
+    <block wx:for="{{weatherData.originalData.results[0].index}}" wx:key="">
+      <view class='adviceItem'>
+        <view class='title'>
+          <view class='titletext'>{{item.title}}</view>
+          <view class='tipt'>{{item.tipt}}:{{item.zs}}</view>
+        </view>
+        <view class='content'>{{item.des}}</view>
+      </view>
+    </block>
+  </view>
+  <view class='buttonContainer'>
+    <button bindtap='recentWeather'>未来三天天气情况</button>
+  </view>
+</view>

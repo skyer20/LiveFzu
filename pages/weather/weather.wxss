@@ -1,0 +1,56 @@
+.container{
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.topContainer{
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: solid 1px #99CCCC;
+}
+.timePosition,.weather{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.weatherDesc image{
+  height: 15px;
+  width: 15px;
+}
+.adviceContainer{
+  font-size: 15px;
+  width: 100%;
+  margin-top: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.adviceItem{
+  width: 100%;
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: solid 1px #99CCCC;
+}
+.title{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: solid 1px #99CCCC;
+}
+.titletext,tipt{
+  width: 50%;
+}
+.buttonContainer{
+  width: 100%;
+}

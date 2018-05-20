@@ -1,11 +1,174 @@
-image{
-  display: inline;
+.container{
+  background-color:#99CCFF;
+  min-height: 100%;
 }
-swiper{
-  height: 400rpx;
+.searchContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.pickerContainer{
+  width: 25%;
+}
+.searchContent{
+  background-color: #fff;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-radius: 15px;
+}
+.pickerItem{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 16px;
+}
+.pickerItem image{
+  margin-top: 5px;
+  width: 15px;
+  height: 15px;
+}
+.searchContent image{
+  padding-left: 4px;
+  width: 20px;
+  height: 20px;
 }
 
-.selectIcon{
-  height: 200rpx;
+.swiper-container{
+  height: 500rpx;
   width: 100%;
+}
+.picture-swiper{
+  height: 500rpx;
+}
+.picture-swiper-item image{
+  height: 500rpx;
+  width: 100%;
+  display: inline-block;
+}
+.Info-container{
+  width: 100%;
+  font-size: 11px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.timePosition,.weather{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.weatherDesc image{
+  height: 15px;
+  width: 15px;
+}
+.selection-container{
+  margin-top: 4px;
+  padding-bottom: 4px;
+  width: 100%;
+  background-color: #fff;
+}
+.selectIcon{
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.icon-item{
+  margin-top: 4px;
+  display: inline-block;
+  width: 16.6%;
+}
+.icon-item image{
+  margin: 0 auto;
+  display: block;
+  height: 32px;
+  width: 62%;
+}
+.icon-text{
+  text-align: center;
+  font-size: 25rpx;
+}
+.notice-container{
+  margin-top: 4px;
+  width: 100%;
+  background-color: #fff;
+}
+.RecentTitle{
+  margin-top: 4px;
+  margin-bottom: 3px;
+  height: 22px;
+}
+.recentContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.tieziItem{
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-top: 8px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+}
+.tieziTop{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: solid 1px #F2f2f2;
+}
+.UserTX image{
+  height: 35px;
+  width: 35px;
+}
+.UserName{
+  margin-left: 5px;
+}
+.imgContainer{
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.imgItem image{
+  height: 80px;
+  width: 80px;
+}
+
+.tieziBottom{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.displaytimeContainer text{
+  font-size: 10px;
+  color: #996699;
+}
+.details{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.detailsText{
+  margin-right: 5px;
+}
+.detailsText text{
+  color: #3399CC;
+  font-size: 16px;
 }

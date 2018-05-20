@@ -1,0 +1,77 @@
+<view class='container'>
+  <view class='topContainer'>
+    <view class='userImg'>
+      <image src='{{bbs.userTX}}'></image>
+    </view>
+    <view class='userName'>
+      <text>{{bbs.userName}}</text>
+    </view>
+  </view>
+  <view class='mesContainer'>
+    <view class='textContent'>
+      <text>{{bbs.textMes}}</text>
+    </view>
+    <view class='imgContent'>
+      <block wx:for="{{bbs.imgMes}}" wx:key="">
+        <view class='imgItem'>
+          <image src="{{item}}"></image>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='mesTitle'>相关信息</view>
+  <view class='bottomContainer'>
+    <view class='bottomItem'>
+      <text>联系人：{{bbs.name}}</text>
+    </view>
+    <view class='bottomItem'>
+      <text>QQ：{{bbs.qq}}</text>
+    </view>
+    <view class='bottomItem'>
+      <text>Tel：{{bbs.tel}}</text>
+    </view>
+    <view class='bottomItem'>
+      <text>时间：{{bbs.eventTime}}</text>
+    </view>
+    <view class='bottomItem'>
+      <text>地点：{{bbs.position}}</text>
+    </view>
+    <view class='bottomItem'>
+      <text>发布时间：{{bbs.displayTime}}</text>
+    </view>
+  </view>
+  <view class='collectContainer'>
+    <view class='collect' bindtap='clickCollect'>
+      <image src="{{collectionIcon}}"></image>
+      收藏
+    </view>
+    <view class='comment' bindtap='clickComment'>
+      <image src='../../img/bbs/comment.png'></image>
+      我要评论
+    </view>
+  </view>
+  <modal hidden="{{hiddenmodalput}}" title="发表评论" confirm-text="发表" cancel-text="取消" bindcancel="cancel"   bindconfirm="confirm">
+    <view class='commentInput'>
+      <textarea placeholder="请输入内容"  bindinput='getComment' value='{{newcomment}}'></textarea>
+    </view>
+  </modal> 
+  <view class='commentTitle'>评论：</view>
+  <view class='commentContainer'>
+    <block wx:for="{{comments}}" wx:key="">
+      <view class='commentItem'>
+        <view class='itemTop'>
+          <view class='itemTopleft'>
+            <image src='{{item.user.wxtxaddress}}'></image>
+            <text>{{item.user.wxname}}</text>
+          </view>
+          <view class='itemTopRight'>
+            <text>{{item.time}}</text>
+          </view>
+        </view>
+        <view class='itemContent'>
+          <text>{{item.content}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

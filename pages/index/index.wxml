@@ -1,12 +1,85 @@
-<swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" mode='scaleToFill'/>
-    </swiper-item>
-  </block>
-</swiper>
-<view class="selectIcon">
-  <block wx:for="{{iconUrls}}">
-    <image src='{{item}}'></image>
-  </block>
+<view class="container">
+  <view class='searchContainer'>
+    <view class='pickerContainer'>
+      <picker bindchange='bindPickerChange' value='{{index}}' range='{{searchArray}}'>
+        <view class='pickerItem'>
+          <text>{{searchArray[index]}}</text>
+          <image src='../../img/index/icon/xiala.png'></image>
+        </view>
+      </picker>
+    </view>
+    <view class='searchContent'>
+      <image src='../../img/index/icon/search.png'></image>
+      <input type='text' placeholder='请输入搜索内容' bindconfirm="searchConfirm"></input>
+    </view>
+  </view>
+  <view class='swiper-container'>
+    <swiper class="picture-swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{imgUrls}}" wx:key="key">
+        <swiper-item class="picture-swiper-item">
+          <image src="{{item}}" mode='scaleToFill' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='Info-container' bindtap='gotoWeather'>
+    <view class='timePosition'>
+      <view class='position'>{{weather.currentWeather[0].currentCity}}</view>
+      <view class='time'>{{weather.currentWeather[0].date}}</view>
+    </view>
+    <view class='weather'>
+      <view class='temperature'>{{weather.currentWeather[0].temperature}}</view>
+      <view class='weatherDesc'>
+        <image src='{{weather.originalData.results[0].weather_data[0].dayPictureUrl}}'></image>
+        {{weather.currentWeather[0].weatherDesc}}
+      </view>
+    </view>
+  </view>
+  <view class='selection-container'>
+    <view class="selectIcon">
+      <block wx:for="{{iconList}}" wx:key="key">
+        <view class='icon-item' bindtap='lookByType' data-name='{{item.name}}'>
+          <image src='{{item.src}}'></image>
+          <view class='icon-text'>{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='RecentTitle'>
+    最近发帖一览
+  </view>
+  <view class='recentContainer'>
+    <block wx:for="{{recentTiezi}}" wx:key="id">
+      <view class='tieziItem'>
+        <view class='tieziTop'>
+          <view class='UserTX'>
+            <image src='{{item.userTX}}'></image>
+          </view>
+          <view class='UserName'>
+            <text>{{item.userName}}</text>
+          </view>
+        </view>
+        <view class='textContainer'>
+          <text>{{item.textMes}}</text>
+        </view>
+        <view class='imgContainer' wx:if="{{item}}">
+          <block wx:for="{{item.imgMes}}" wx:key="key">
+            <view class='imgItem'>
+              <image src="{{item}}"></image>
+            </view>
+          </block>
+        </view>
+        <view class='tieziBottom'>
+          <view class='displaytimeContainer'>
+            <text>{{item.displayTime}}发布</text>
+          </view>
+          <view class='details'>
+            <view class='detailsText' bindtap='lookDetails' data-item='{{item}}'>
+              <text>查看详情>></text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
 </view>

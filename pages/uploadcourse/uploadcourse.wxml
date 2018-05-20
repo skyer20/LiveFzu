@@ -1,0 +1,13 @@
+<view class="container">
+  <view class='title'>{{course.course}}_{{course.teather}}</view>
+  <view class='fileContent'>
+    <block wx:for="{{files}}" wx:key="">
+      <view class='fileItem' bindtap='uploadFile' data-item='{{item}}'>
+        <view class='filemes'>
+        {{item.fileName}}
+        <image src='../../img/uploadcourse/upload.png'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

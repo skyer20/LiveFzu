@@ -1,1 +1,79 @@
-/* pages/release/release.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #99CCFF;
+}
+.contentContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #ffffff;
+}
+.title{
+  width: 100%;
+  height: 25px;
+  padding-left: 5px;
+  background-color: #99CCFF;
+}
+.textMes{
+  width: 100%;
+  height: 200px;
+  margin-left: 4px;
+  padding-top: 2px;
+  border-radius: 3px;
+}
+.textMes textarea{
+  width: 100%;
+  height: 200px;
+  font-size: 15px;
+}
+
+.picMes{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.imgItem{
+  margin-top: 2px;
+  margin-left: 2px;
+  border: solid 1px #FFCCCC;
+}
+.imgItem image{
+  height: 75px;
+  width: 75px;
+}
+.releaseMes{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.typeText{
+  border-bottom: solid 1px #FFCCCC
+}
+.typeText text{
+  margin-left: 5px;
+}
+.radioContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+.radioContainer radio{
+  margin: 1px 3px 1px 2px;
+}
+.nameText,.telText,.QQText,.positionText,.timeText{
+  margin-left: 5px;
+}
+.nameInput,.telInput,.QQInput,.positionInput,.timeInput{
+  background-color: #ffffff;
+  border: solid 1px #FFCCCC;
+}

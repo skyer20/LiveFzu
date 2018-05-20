@@ -1,1 +1,114 @@
-/* pages/personal/personal.wxss */
+.container{
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #99CCFF;
+}
+
+.mesContainer{
+  width: 100%;
+  margin-top: -45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.wxtx image{
+  border-radius: 44px;
+  height:75px;
+  width: 75px;
+}
+
+.backgroundBorder{
+  margin-top: 30px;
+  height: 200px;
+  width: 80%;
+  border: solid 1px #008888;
+  border-radius: 8px;
+  background-color: #F3F3FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.itemContainer{
+  margin-left: 10px;
+  width: 90%;
+  height: 53px;
+  border: solid 1px #008888;
+  border-radius: 8px;
+  background-color: #F3F3FA;
+}
+.myBBS{
+  height: 25px;
+  width: 100%;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: solid 1px #008888;
+}
+.myCollection{
+  height: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.bbsButton,.collectionButton{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.bbsButton image,.collectionButton image{
+  height: 18px;
+  width: 16px;
+}
+.myBBS text,.myCollection text{
+  font-size: 15px;
+}
+
+.linkContainer{
+  margin-left: 10px;
+  margin-top: 17px;
+  width: 90%;
+  height: 53px;
+  border: solid 1px #008888;
+  border-radius: 8px;
+  background-color: #F3F3FA;
+}
+.service{
+  height: 25px;
+  width: 100%;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: solid 1px #008888;
+}
+.suggest{
+  height: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.commentInput textarea{
+  width: 100%;
+  height: 200px;
+  border: solid 1px #FFCCCC;
+}
+
+.serviceButton,.suggestButton{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.serviceButton image,.suggestButton image{
+  height: 18px;
+  width: 16px;
+}
+.service text,.suggest text{
+  font-size: 15px;
+}

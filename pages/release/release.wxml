@@ -1,2 +1,75 @@
-<!--pages/release/release.wxml-->
-<text>pages/release/release.wxml</text>
+<view class='container'>
+  <view class='contentContainer'>
+    <view class='title'>
+      <text>内容描述</text>
+    </view>
+    <view class='textMes'>
+      <textarea placeholder='请输入内容描述' maxlength='255' bindinput='getContext' value='{{textContent}}'></textarea>
+    </view>
+    <view class='picMes'>
+      <block wx:for='{{imgUrl}}' wx:key='key'>
+        <view class='imgItem' bindtap='{{item.clickmethod}}'>
+          <image src='{{item.src}}'></image>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='releaseMes'>
+    <view class='typeText'>
+      <text>发布类型：</text>
+    </view>
+    <view class='typeContainer'>
+      <radio-group class='radioContainer' bindchange='getType' value="{{releasetype}}">
+        <radio value='二手物品' checked='true'>二手物品</radio>
+        <radio value='兼职家教'>兼职家教</radio>
+        <radio value='失物招领'>失物招领</radio>
+        <radio value='学院信息'>学院信息</radio>
+        <radio value='就业信息'>就业信息</radio>
+        <radio value='拼车'>拼车</radio>
+      </radio-group>
+    </view>
+    <view class='nameContainer'>
+      <view class='nameText'>
+        <text>联系人：</text>
+      </view>
+      <view class='nameInput'>
+        <input type='text' bindinput='getName' value='{{name}}'></input>
+      </view>
+    </view>
+    <view class='telContainer'>
+      <view class='telText'>
+        <text>Tel：</text>
+      </view>
+      <view class='telInput'>
+        <input type='text' bindinput='getTel' value='{{tel}}'></input>
+      </view>
+    </view>
+    <view class='QQContainer'>
+      <view class='QQText'>
+        <text>QQ：</text>
+      </view>
+      <view class='QQInput'>
+        <input type='text' bindinput='getQQ' value='{{qq}}'></input>
+      </view>
+    </view>
+    <view class='positionContainer'>
+      <view class='positionText'>
+        <text>位置：</text>
+      </view>
+      <view class='positionInput'>
+        <input type='text' bindinput='getPosition' value='{{position}}'></input>
+      </view>
+    </view>
+    <view class='timeContainer'>
+      <view class='timeText'>
+        <text>时间：</text>
+      </view>
+      <view class='timeInput'>
+        <input type='text' bindinput='getTime' value='{{time}}'></input>
+      </view>
+    </view>
+    <view class='submissionButton'>
+      <button bindtap='release'>确认发布</button>
+    </view>
+  </view>
+</view>

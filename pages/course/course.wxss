@@ -1,0 +1,90 @@
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.searchContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: solid 5px #999966;
+}
+.pickerContainer{
+  width: 25%;
+}
+.searchContent{
+  background-color: #fff;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-radius: 15px;
+}
+.searchContent{
+  border: solid 1px #CC99CC;
+}
+.pickerItem{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 16px;
+}
+.pickerItem image{
+  margin-top: 5px;
+  width: 15px;
+  height: 15px;
+}
+.searchContent image{
+  padding-left: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.courseTitle{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #0099CC;
+  font-size: 23px;
+}
+.courseContent{
+  width: 100%;
+}
+.courseItem{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  font-size: 14px;
+}
+.itemHead{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.itemCenter{
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.itembottom{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-bottom: solid 5px #999966;
+}
+
+.uploadButton{
+  width:100%; 
+  position:fixed; 
+  bottom:0;
+}

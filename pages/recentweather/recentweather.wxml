@@ -1,0 +1,20 @@
+<view class="container">
+  <view class='title'>未来三天天气情况</view>
+  <view class='weatherContainer'>
+    <block wx:for="{{weatherData}}" wx:key="">
+      <view class='dataItem'>
+        <view class='itemTop'>
+          <view class='time'>{{item.date}}</view>
+          <view class='temp'>{{item.temperature}}</view>
+        </view>
+        <view class='weather'>
+          {{item.weather}}
+          <image src='{{item.dayPictureUrl}}'></image>
+          ~
+          <image src='{{item.nightPictureUrl}}'></image>
+        </view>
+        <view class='wind'>{{item.wind}}</view>
+      </view>
+    </block>
+  </view>
+</view>
